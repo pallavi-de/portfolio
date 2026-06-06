@@ -24,7 +24,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm"
           >
-            Full Stack Developer
+            Mern Stack Developer
           </motion.span>
 
           <motion.h1
@@ -59,14 +59,19 @@ export default function Hero() {
               View Projects →
             </button>
 
-            <button className="rounded-xl border border-white/20 bg-white/10 px-8 py-4 font-semibold backdrop-blur">
-              Contact Me
-            </button>
+           <a
+  href="https://wa.me/919876543210?text=Hello%20Pallavi,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-xl border border-white/20 bg-white/10 px-8 py-4 font-semibold backdrop-blur transition hover:bg-white/20"
+>
+  Contact Me
+</a>
           </motion.div>
 
           {/* Social Icons */}
           <div className="mt-12 flex gap-4">
-            {["github", "linkedin", "twitter", "mail"].map((item, i) => (
+            {["github", "linkedin", "mail"].map((item, i) => (
               <motion.a
                 key={i}
                 whileHover={{ y: -5 }}

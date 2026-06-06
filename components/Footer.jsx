@@ -44,14 +44,6 @@ export default function Footer() {
             <FaLinkedinIn size={22} />
           </a>
 
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-purple-600 transition"
-          >
-            <FaTwitter size={22} />
-          </a>
 
           <a
             href="mailto:yourmail@gmail.com"

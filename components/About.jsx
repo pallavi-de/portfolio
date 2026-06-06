@@ -83,8 +83,8 @@ export default function About() {
             {/* Details Grid */}
             <div className="grid gap-8 sm:grid-cols-2">
               <div>
-                <p className="mb-2 text-gray-500">Name</p>
-                <h4 className="text-xl font-semibold">Your Name</h4>
+                <p className="mb-2 text-gray-500">Pallavi</p>
+                <h4 className="text-xl font-semibold">Desai</h4>
               </div>
 
               <div>
