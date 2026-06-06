@@ -43,7 +43,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="/resume.pdf"
+          href="/Pal.pdf.pdf"
           className="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 rounded-xl text-white font-semibold hover:scale-105 transition"
         >
           Resume

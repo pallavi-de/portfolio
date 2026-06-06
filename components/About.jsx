@@ -108,6 +108,14 @@ export default function About() {
                 </h4>
               </div>
             </div>
+            <a
+  href="https://drive.google.com/uc?export=download&id=1vrHIGbUEH9ip1CZy3ebEWYwYO-hLA6Uv"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-8 py-4 font-semibold text-white transition hover:scale-105"
+>
+  Download Resume
+</a>
           </motion.div>
         </div>
       </div>
