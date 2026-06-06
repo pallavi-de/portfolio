@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#090b12] text-white">
 
-      {/* Background Glow (smaller on mobile) */}
+      {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute left-0 top-0 h-[180px] w-[180px] sm:h-[300px] sm:w-[300px] md:h-[500px] md:w-[500px] rounded-full bg-purple-600/20 blur-[100px]" />
         <div className="absolute bottom-0 right-0 h-[180px] w-[180px] sm:h-[300px] sm:w-[300px] md:h-[500px] md:w-[500px] rounded-full bg-pink-500/20 blur-[100px]" />
@@ -17,7 +17,7 @@ export default function Hero() {
       {/* MAIN WRAPPER */}
       <div className="
         relative z-10 mx-auto max-w-7xl flex flex-col lg:flex-row
-        items-center lg:items-center lg:justify-between
+        items-center lg:justify-between
         justify-start
         min-h-[85vh] sm:min-h-screen
         px-6 lg:px-12
@@ -101,7 +101,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator (smaller + less intrusive) */}
+      {/* Scroll Indicator */}
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 1.5 }}
