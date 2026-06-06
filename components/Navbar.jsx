@@ -42,12 +42,15 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <a
-          href="/Pal.pdf.pdf"
-          className="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 rounded-xl text-white font-semibold hover:scale-105 transition"
-        >
-          Resume
-        </a>
+       <a
+  href="https://drive.google.com/file/d/1vrHIGbUEH9ip1CZy3ebEWYwYO-hLA6Uv/view"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 font-semibold text-white transition hover:scale-105"
+>
+  Resume
+</a>
+        
       </nav>
     </header>
   );
