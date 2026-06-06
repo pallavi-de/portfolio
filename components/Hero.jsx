@@ -59,8 +59,8 @@ export default function Hero() {
               View Projects →
             </button>
 
-           <a
-  href="https://wa.me/919876543210?text=Hello%20Pallavi,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+          <a
+  href="https://wa.me/919657263601?text=Hi%20Pallavi,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
   target="_blank"
   rel="noopener noreferrer"
   className="rounded-xl border border-white/20 bg-white/10 px-8 py-4 font-semibold backdrop-blur transition hover:bg-white/20"
