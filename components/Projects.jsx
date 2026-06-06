@@ -1,36 +1,41 @@
-const projects = [
-  {
-    title: "Farm Fresh",
-    description: "Online platform connecting farmers and customers."
-  },
-  {
-    title: "Blinkit Clone",
-    description: "Quick commerce grocery delivery application."
-  },
-  {
-    title: "Portfolio Website",
-    description: "Personal portfolio built with Next.js."
-  }
-];
-
 export default function Projects() {
-  return (
-    <section id="projects" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-8">Projects</h2>
+  const projects = [
+    {
+      title: "Farm Fresh",
+      desc: "Farmer to customer marketplace",
+    },
+    {
+      title: "Blinkit Clone",
+      desc: "Quick commerce application",
+    },
+    {
+      title: "Portfolio Website",
+      desc: "Personal branding platform",
+    },
+  ];
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+  return (
+    <section
+      id="projects"
+      className="bg-slate-950 text-white py-20"
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-bold mb-10">
+          Featured Projects
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {projects.map((project) => (
             <div
-              key={index}
-              className="bg-white p-6 rounded-xl shadow-lg"
+              key={project.title}
+              className="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:-translate-y-2 transition"
             >
-              <h3 className="text-2xl font-semibold mb-3">
+              <h3 className="text-2xl font-bold mb-3">
                 {project.title}
               </h3>
 
-              <p className="text-gray-600">
-                {project.description}
+              <p className="text-gray-400">
+                {project.desc}
               </p>
             </div>
           ))}
