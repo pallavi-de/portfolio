@@ -7,116 +7,117 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#090b12] py-24 text-white"
+      className="relative overflow-hidden bg-[#090b12] py-10 sm:py-14 md:py-16 text-white"
     >
-      {/* Background Glow */}
-      <div className="absolute left-20 top-32 h-72 w-72 rounded-full bg-purple-600/20 blur-[120px]" />
-      <div className="absolute right-20 bottom-20 h-72 w-72 rounded-full bg-pink-500/20 blur-[120px]" />
+      {/* Background Glow (smaller) */}
+      <div className="absolute left-10 top-10 h-40 w-40 sm:h-60 sm:w-60 rounded-full bg-purple-600/20 blur-[90px]" />
+      <div className="absolute right-10 bottom-10 h-40 w-40 sm:h-60 sm:w-60 rounded-full bg-pink-500/20 blur-[90px]" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
-        {/* Heading */}
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+
+        {/* Heading (compact) */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="mb-8 sm:mb-10 text-center"
         >
-          <h2 className="text-5xl font-bold md:text-6xl">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold">
             About <span className="text-white">Me</span>
           </h2>
 
-          <div className="mx-auto mt-4 h-1 w-28 rounded-full bg-gradient-to-r from-purple-500 to-pink-500" />
+          <div className="mx-auto mt-3 h-1 w-20 sm:w-24 rounded-full bg-gradient-to-r from-purple-500 to-pink-500" />
         </motion.div>
 
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* Left Image */}
+        {/* Cards */}
+        <div className="grid items-stretch gap-6 lg:grid-cols-2">
+
+          {/* LEFT IMAGE */}
           <motion.div
-            initial={{ opacity: 0, x: -80 }}
+            initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="relative"
           >
-            {/* Glow */}
-            <div className="absolute -inset-3 rounded-3xl bg-gradient-to-r from-purple-500/30 to-pink-500/30 blur-xl" />
+            <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
 
-            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5">
-              <Image
-                src="/pal.jpg.jpeg"
-                alt="Profile"
-                width={700}
-                height={800}
-                className="h-full w-full object-cover"
-              />
+              <div className="relative h-[260px] sm:h-[340px] md:h-full w-full">
+                <Image
+                  src="/pal.jpg.jpeg"
+                  alt="Profile"
+                  width={700}
+                  height={800}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
             </div>
           </motion.div>
 
-          {/* Right Content */}
+          {/* RIGHT CONTENT */}
           <motion.div
-            initial={{ opacity: 0, x: 80 }}
+            initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl"
+            className="flex flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:p-6 md:p-7 backdrop-blur-xl"
           >
-            <p className="mb-8 text-lg leading-9 text-gray-300">
-              I m a passionate software engineer with experience building
-              modern web applications and digital products. I specialize in
-              frontend development using React and Next.js while also working
-              extensively on backend systems and cloud infrastructure.
-            </p>
+            <div>
 
-            <p className="mb-8 text-lg leading-9 text-gray-300">
-              My journey in technology began with a deep curiosity about how
-              software works. Since then, I ve built scalable applications,
-              collaborated with teams, and delivered high-performance digital
-              solutions across multiple industries.
-            </p>
+              <p className="mb-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-300">
+                I am a passionate software engineer building modern web apps using React and Next.js.
+              </p>
 
-            <p className="mb-10 text-lg leading-9 text-gray-300">
-              Beyond coding, I enjoy exploring emerging technologies,
-              contributing to open-source projects, and continuously learning
-              new skills to stay ahead in the ever-changing tech landscape.
-            </p>
+              <p className="mb-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-300">
+                I specialize in frontend development and backend systems, focusing on scalable solutions.
+              </p>
 
-            {/* Details Grid */}
-            <div className="grid gap-8 sm:grid-cols-2">
-              <div>
-                <p className="mb-2 text-gray-500">Pallavi</p>
-                <h4 className="text-xl font-semibold">Desai</h4>
-              </div>
+              <p className="mb-6 text-sm sm:text-base leading-6 sm:leading-7 text-gray-300">
+                I enjoy learning new technologies and contributing to real-world projects.
+              </p>
 
-              <div>
-                <p className="mb-2 text-gray-500">Email</p>
-                <h4 className="text-xl font-semibold">
-                  pallavidesai2222@gmail.com
-                </h4>
-              </div>
+              {/* Details */}
+              <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
+                <div>
+                  <p className="text-gray-500 text-xs sm:text-sm">Name</p>
+                  <h4 className="text-base sm:text-lg font-semibold">Pallavi Desai</h4>
+                </div>
 
-              <div>
-                <p className="mb-2 text-gray-500">Location</p>
-                <h4 className="text-xl font-semibold">
-                  Pune, Maharashtra, India
-                </h4>
-              </div>
+                <div>
+                  <p className="text-gray-500 text-xs sm:text-sm">Email</p>
+                  <h4 className="text-base sm:text-lg font-semibold break-words">
+                    pallavidesai2222@gmail.com
+                  </h4>
+                </div>
 
-              <div>
-                <p className="mb-2 text-gray-500">Availability</p>
-                <h4 className="text-xl font-semibold text-green-400">
-                  Open to Opportunities
-                </h4>
+                <div>
+                  <p className="text-gray-500 text-xs sm:text-sm">Location</p>
+                  <h4 className="text-base sm:text-lg font-semibold">
+                    Pune, Maharashtra
+                  </h4>
+                </div>
+
+                <div>
+                  <p className="text-gray-500 text-xs sm:text-sm">Status</p>
+                  <h4 className="text-base sm:text-lg font-semibold text-green-400">
+                    Open to Work
+                  </h4>
+                </div>
               </div>
             </div>
-            <a
-  href="https://drive.google.com/uc?export=download&id=1vrHIGbUEH9ip1CZy3ebEWYwYO-hLA6Uv"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-8 py-4 font-semibold text-white transition hover:scale-105"
->
-  Download Resume
-</a>
+
+            {/* Button */}
+            <div className="mt-6">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1vrHIGbUEH9ip1CZy3ebEWYwYO-hLA6Uv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-5 sm:px-7 py-3 font-semibold transition hover:scale-105"
+              >
+                Download Resume
+              </a>
+            </div>
           </motion.div>
+
         </div>
       </div>
     </section>
